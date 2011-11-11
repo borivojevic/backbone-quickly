@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backbone.js Quickly</title>
+    <link href='stylesheets/screen.css' media='all' rel='stylesheet' type='text/css' />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js' type='text/javascript'></script>
+    <script src='javascripts/underscore-min.js' type='text/javascript'></script>
+    <script src='javascripts/backbone-min.js' type='text/javascript'></script>
+    <script src='javascripts/config.js' type='text/javascript'></script>
+    <script src='javascripts/application.js' type='text/javascript'></script>
+    <script id='imageTemplate' type='text/html'>
+      <a href='javascript: void(0)'>
+        <img height='110' src='http://flickholdr.com/110/110/{{model.term}}/{{model.offset}}' width='110' />
+      </a>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(function() { App.start(); })
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id='container'>
+      <header class='page-header'>
+        <ul id='todo'></ul>
+        <h1>
+          <a href='/'>Backbone.js Quickly</a>
+          <small>Let's Create A Backbone.js Application From Scratch!</small>
+        </h1>
+      </header>
+      <div id='content'>
+        <section id='favorites'>
+          <h1>My Favs</h1>
+          <p>No favorites yet?  Man, you're picky!</p>
+          <ul class='media-grid'></ul>
+        </section>
+        <input id='search' type='text' />
+        <section id='search-results'>
+          <h1>Search Results</h1>
+          <ul class='media-grid'></ul>
+        </section>
+      </div>
+      <footer>
+        <small>
+          powered by
+          <a href='https://github.com/joeybeninghove/fun'>fun</a>
+        </small>
+        <img alt='30 Cubits' src='http://f.cl.ly/items/3F0N3P1R410n031Q271a/logo-small.png' />
+      </footer>
+    </div>
+  </body>
+</html>

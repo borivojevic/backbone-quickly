@@ -1,0 +1,7 @@
+%script{:id => 'imageTemplate', :type => 'text/html'}
+  %a{:href => 'javascript: void(0)'}
+    %img{:src => 'http://flickholdr.com/110/110/{{model.term}}/{{model.offset}}', :width => 110, :height => 110 }
+
+%script{:id => 'todoTemplate', :type => 'text/html'}
+  %a{:rel => 'popover', :href => '#', 'data-content' => '{{model.description}}', 'data-original-title' => '{{model.title}}'}
+    %img{:src => 'images/{{model.status}}.png'}
